@@ -1,3 +1,10 @@
+// get only unique categories - HARDEST ONE
+// iterate over categories return buttons
+// make sure to select buttons when they are available
+
+
+
+
 // items
 const menu = [
     {
@@ -87,7 +94,8 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 
 //load items
 window.addEventListener("DOMContentLoaded", function () {
-    displayMenuItems(menu);    
+    displayMenuItems(menu);  
+    
 });
 //filter items
 filterBtns.forEach(function (btn) {
