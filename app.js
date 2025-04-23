@@ -77,8 +77,12 @@ const menu = [
 const sectionCenter = document.querySelector(".section-center");
 
 window.addEventListener("DOMContentLoaded", function () {
-    //console.log("shake and bake");
-    let displayMenu = menu.map(function (item) {
+    displayMenuItems(menu);
+    
+});
+
+function displayMenuItems(menuItems) {
+    let displayMenu = menuItems.map(function (item) {
         console.log(item);
 
         return `<article class="menu-item">
@@ -96,5 +100,6 @@ window.addEventListener("DOMContentLoaded", function () {
     });
     displayMenu = displayMenu.join("");
     //console.log(displayMenu);
+
     sectionCenter.innerHTML = displayMenu;
-});
+}
